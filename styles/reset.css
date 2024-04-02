@@ -1,0 +1,215 @@
+/*
+   Reset CSS
+   Elimina los estilos predeterminados del navegador para un renderizado más consistente.
+   Adaptado de Eric Meyer's Reset CSS v2.0
+   https://meyerweb.com/eric/tools/css/reset/
+*/
+
+/*----------------------------------------------
+1. Establecer valores predeterminados
+----------------------------------------------*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*----------------------------------------------
+2. Reestablecer estilos específicos para algunos elementos
+----------------------------------------------*/
+
+/* Reestablecer la fuente del contenido editable */
+[contenteditable] {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+/* Reestablecer la dirección del texto */
+html[dir="rtl"] body[dir="ltr"],
+body[dir="rtl"] html[dir="ltr"],
+html[dir="ltr"] body[dir="rtl"],
+body[dir="ltr"] html[dir="rtl"] {
+    direction: ltr;
+}
+
+/* Reestablecer el cursor del mouse */
+body {
+    cursor: auto;
+}
+
+/*----------------------------------------------
+3. Ajustes específicos para navegadores
+----------------------------------------------*/
+
+/* Firefox */
+@-moz-document url-prefix() {
+    fieldset {
+        display: table-cell;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+}
+
+/* Internet Explorer */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* Agregar estilos específicos para Internet Explorer */
+}
+
+/* Chrome, Safari, Edge */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* Agregar estilos específicos para WebKit */
+}
+
+/*----------------------------------------------
+4. Estilos específicos para navegadores móviles
+----------------------------------------------*/
+
+/* iOS */
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait) {
+    /* Estilos específicos para iPad Portrait */
+}
+
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape) {
+    /* Estilos específicos para iPad Landscape */
+}
+
+/* Android */
+@media only screen and (max-device-width: 480px) {
+    /* Estilos específicos para dispositivos Android */
+}
+
+/* Windows Phone */
+@media only screen and (max-width: 480px) {
+    /* Estilos específicos para Windows Phone */
+}
+
+/*----------------------------------------------
+5. Estilos de corrección posteriores
+----------------------------------------------*/
+
+/* Agregar estilos de corrección posteriores aquí */
+
+/*----------------------------------------------
+6. Estilos específicos para el proyecto
+----------------------------------------------*/
+
+/* Agregar estilos específicos para el proyecto aquí */
