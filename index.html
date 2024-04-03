@@ -9,15 +9,23 @@
 </head>
 <body>
     <header>
-        <h1>Carlos Augusto Tunjano Gutiérrez</h1>
+        <h1>Proyecto M1</h1>
+        <nav class="barraNavegacion">
+            <ul>
+                <li><a href="#aboutMe">Acerca de mí</a></li>
+                <li><a href="#tecnologies">Mis tecnologías favoritas</a></li>
+                <li><a href="#activities">Mis actividades favoritas</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section class="contAbout">
+        <section id="aboutMe" class="contAbout">
             <div>
                 <h2>Acerca de mí</h2>
             </div>
             <div class="aboutMe">
                 <div>
+                    <h2>Carlos Tunjano</h2>
                     <p>Licenciado en matemáticas e Ingeniero de telecomunicaciones. Con experiencia en administración de plataformas LMS, manejo de personal, seguimiento de procesos educativos y alta disposición para aprender. Excelentes relaciones interpersonales. Responsabilidad, liderazgo y compromiso.</p>
                 </div>
                 <div>
@@ -25,7 +33,7 @@
                 </div>
             </div>
         </section>
-        <section class="contTecno">
+        <section id="tecnologies" class="contTecno">
             <h2>Mis tecnologías favoritas</h2>
             <div  class="tecnologias">
                 <div class="software">
@@ -54,23 +62,26 @@
                 </div>
             </div>
         </section>
-        <section class="actividades">
+        <section id="activities" class="actividades">
             <div>
                 <h2>Mis actividades favoritas</h2>
                 <form>
-                    <div>
-                        <label>Título</label>
-                        <input>
-                    </div>
-                    <div>
-                        <label>Descripción</label>
-                        <input>
-                    </div>
-                    <div>
-                        <label>URL de la imagen</label>
-                        <input>
-                    </div>
+                    <fieldset>
+                        <legend>Ingresa una actividad</legend>
+                    
+                        <label for="titulo">Título</label>
+                        <input type="text" id="titulo" placeholder="Titulo de la actividad" size="10">
+                    
+                        <label for="url">Imagen</label>
+                        <input type="url" id="url" placeholder="Ingresa la url donde se encuentra la imagen" size="10">
+
+                        <label for="descripcion">Descripción</label>
+                        <textarea id="descripcion" rows="5" cols="33"></textarea>
+
+                        <span><a href="#"></a></span>
+                    </fieldset>
                 </form>
+
             </div>
             <div>
                 <h2>Actividades</h2>
@@ -81,6 +92,10 @@
         </section>
     </main>
     <footer>
+        &copy; 2024 - Proyecto módulo 1
     </footer>
+
+    <script src="./scripts/index.js"></script>
+
 </body>
 </html>
