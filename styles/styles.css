@@ -7,6 +7,10 @@ header {
     height: auto;
 }
 
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 h1 {
     color: #FFFFFF;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -189,10 +193,13 @@ footer {
 
 .contActividades {
     width: 60vw;
-    height: 200px;
+    height: auto;
     border: 2px solid  #21542F;
     margin: 1em;
     margin-top: 20px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Columnas automáticas con un mínimo de 200px */
+    gap: 20px; /* Espacio entre las "cards" */
 }
 
 .actividades {
@@ -206,4 +213,42 @@ footer {
     text-align: center;
     padding: 14px 16px; /* Ajustar el espacio alrededor del texto */
     text-decoration: none;
+}
+
+.imagenAct {
+    height: 120px;
+    width: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+    filter: grayscale(100%);
+}
+
+.imagenAct:hover {
+    filter: grayscale(0%);
+}
+
+.misActividades {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    height: auto;
+    width: auto;
+    background-color: #21542F;
+    display: block;
+}
+
+.h3 {
+    color: #FFFFFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.p {
+    color:#FFFFFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 1em;
 }
